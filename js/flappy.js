@@ -77,6 +77,7 @@ function create() {game.stage.setBackgroundColor ("#F0B2F0");
 
 
 function clickHandler(event){
+
     var background = game.add.sprite(event.x,event.y,"additionalsecondImg");
     background.width = 80;
     background.height = 80;
