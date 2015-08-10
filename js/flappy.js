@@ -85,6 +85,7 @@ function clickHandler(event){
  * This function updates the scene. It is called for every new frame.
  */
 function update(){
+
     for(var index=0; index<pipes.length; index++){
         game.physics.arcade
             .overlap(player,
