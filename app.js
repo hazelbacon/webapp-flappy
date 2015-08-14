@@ -6,11 +6,12 @@ var csv = require('ya-csv');
 
 var app = express();
 app.use(express.static(path.join(__dirname, "")));
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended:true}));
 
-app.get('/', function(request, response){
+app.get("/", function(request, response){
     response.sendFile(path.join(__dirname, "pages/index.html"));
 });
+
 app.get("/score", function(request, response) {
     var reader = csv.createCsvFileReader("scores.csv");
     reader.setColumnNames(['name', 'score']);
@@ -23,7 +24,6 @@ app.get("/score", function(request, response) {
     })
 });
 
-
 app.post('/score', function(request, response){
     var name = request.body.fullName;
     var score = request.body.score;
@@ -31,8 +31,11 @@ app.post('/score', function(request, response){
     var data = [name, score];
     database.writeRecord(data);
     database.writeStream.end();
-    response.send("Thanks " + name + ", your score has been recorded - click to play more http://localhost:8080/");
+    response.send("Thanks " + name + ", your score has been recorded!");
 });
+
+
+
 
 
 var server = app.listen(8080, function() {

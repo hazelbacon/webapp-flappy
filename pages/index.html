@@ -1,62 +1,85 @@
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Rosie's Flying Fish</title>
-    <link rel="stylesheet"href="../assets/style.css"/>
+    <title> Catapult</title>
     <link rel="stylesheet" href="../lib/bootstrap.css"/>
+    <link rel="stylesheet" href="../assets/style.css"/>
+
 </head>
 
-<!--<style>
-    #example1 {
-        background:url(../assets/Under-The-Sea.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-</style>-->
+<img src="../assets/catsbackground3.jpg" style='position:absolute;top:0px;left:0px;width:100%;max-height:100%;border:0;'/>
 
-
-<img src="../assets/Under-The-Sea.jpg" style=' position: absolute; top:0px; left:0px; width:100%; max-height:100%;border:0;'/>
 <body>
-<!--<div id = example1>-->
-<h1 id="Title" style=' position: relative;'>Welcome To Flying Fish!</h1>
-<!--<body width = "100" background="../assets/Under-The-Sea.jpg" >-->
-
-<p id="intro" style=' position: relative;'>
-    Have fun making the fish fly through the gaps...
-    Press Enter to start ot game / Spacebar to jump</p>
 
 
-<div class=".col-md-4">
-    <div id="game"style=' position: relative;'></div></div>
-
-<h4> <p id="scorers" style=' position: relative; align: center'>The highest scorers are:</p>
-<ul id="scoreBoard" style=' position: relative; list-style-type: none;'></ul></h4>
+<div class="container">
+         <h1 id="title"> Catapult</h1>
+         <h2 id="caption">The Jumping Cat</h2>
+     </div>
 
 
 
-<div id="greeting" style=' position: relative; text-align: center; '>
-    <h3>Save your score</h3>
-    <link rel="stylesheet" href="../lib/bootstrap.css"/>
-    <form id="greeting-form" method="post" action="/score">
+<div class="row">
+        <div class="col-xs-8">
 
-            <label for="fullName">What's your name?</label>
-            <input type="text" id="fullName"
-                   name="fullName" class="form-control" placeholder="Name">
-            <input type="hidden" id="score" name="score" value="0">
 
-        <button class="btn btn-default" type="submit">OK</button>
-    </form>
+            <div id="game"> </div> <!-- <img src="../assets/screenshotpink.png"/>-->
+        </div>
+        <div class="col-xs-1">
+        </div>
+        <div class="col-xs-3">
+             <p>
+
+
+
+            <div id="greeting">
+            <h3>Save your score</h3>
+            <form id="greeting-form" method="post" action="/score">
+                    <div class="form-group">
+                        <label for="fullName">What's your name?</label>
+                        <input type="text" id="fullName"
+                               name="fullName" class="form-control" placeholder="Name">
+                        <input type="hidden" id="score" name="score" value="0">
+                    </div>
+                    <button class="btn btn-default" type="submit">OK</button>
+                </form>
+            </div>
+
+
+
+
+
+
+
+
+<h4> <li class="score">Use the space bar to jump</li>
+    <li class="score">Avoid the pipes</li>
+    <li class="score">Get as many points as you can</li>
+    <li class="score">Have fun!</li>
+</h4>
+            <br>
+
+
+
+            <h5>
+                The highest scorers are:
+                <ul id="scoreBoard"></ul>
+            </h5>
+
+
+     </div>
 </div>
 
 
 
 
+</div>
 
 <script src="../lib/jquery.js"></script>
 <script type="text/javascript" src="../lib/phaser.min.js"></script>
 <script type="text/javascript" src="../js/flappy.js"></script>
 
-
 </body>
+
 </html>

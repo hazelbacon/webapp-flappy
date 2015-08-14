@@ -1,55 +1,78 @@
-h1{color: darkblue;
-font-size: 50px;
-font-family: "Ebrima";
+h1 {
+    color: #ba25ba;
+    font-size: 50px;
+    font-style: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position:relative;
 }
-#gamelink {
+
+#title {
     text-align: center;
-    img-align: center;
-    border: 1px solid gray;
 }
-#Title {
+
+#caption {
     text-align: center;
-    font-style: italic;
+}
+h2 {
+    color: #ba25ba;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position:relative;
+}
+.score {
+    color: #ba25ba;
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position:relative
+}
+
+h4 {color: #ba25ba;
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position:relative;
+    left: -47%
 
 }
-#intro {
-    text-align: center;
-}
+
+h5 {color: #ba25ba;
+     font-size: 18px;
+     font-style: normal;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     position:relative;
+    left: -47%
+
+ }
+
+
+
 
 #game {
-padding-left: 0;
+    padding-left: 0;
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
     width: 800px;
+    position: relative;
+
+
 }
 
 #greeting {
-    display: none;
-
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    left: 0;
-    right: 0;
-    background: #fff;
+    position:absolute;
+    left: -40%;
+    top: 100%;
+    background:#F0B2F0;
     width: 350px;
-    height: 200px;
-    border: 2px solid gray;
+    height: 185px;
+    border: 2px lightgrey;
     border-radius: 5px;
-    padding: 20px;
-    color: midnightblue;
+    padding: 10px;
+    display: none;
 }
 
-h4 {
 
-    text-align: center;
-}
-
-p {
-    color: slategray;
-
-}
 
