@@ -228,17 +228,6 @@ function addPipeEnd(x,y){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 function generatefish() {
         var bonus = game.add.sprite(width, height, "fish");
     bonus.scale.x = 0.25;
