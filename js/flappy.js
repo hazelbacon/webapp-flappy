@@ -27,6 +27,7 @@ var pipeEndExtraWidth= 10;
 var pipeEndHeight = 25;
 var stars = [];
 
+
 var game = new Phaser.Game(width, height, Phaser.AUTO, 'game', stateActions);
 
 /*
@@ -55,6 +56,8 @@ function preload(){
  * Initialises the game. This function is only called once.
  */
 function create() {
+
+    
     game.stage.setBackgroundColor ("#F0B2F0");
 // set the background colour of the scene
     game.add.text(230,150, "Catapult",
