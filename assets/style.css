@@ -1,0 +1,55 @@
+h1{color: darkblue;
+font-size: 50px;
+font-family: "Ebrima";
+}
+#gamelink {
+    text-align: center;
+    img-align: center;
+    border: 1px solid gray;
+}
+#Title {
+    text-align: center;
+    font-style: italic;
+}
+#intro {
+    text-align: center;
+}
+
+#game {
+padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+}
+
+#greeting {
+    display: none;
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    width: 350px;
+    height: 200px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    color: midnightblue;
+}
+
+h4 {
+
+    text-align: center;
+}
+
+p {
+    color: slategray;
+    text-outline:("#676767", 10, 10);
+
+}
+
