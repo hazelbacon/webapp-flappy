@@ -57,7 +57,7 @@ function preload(){
  */
 function create() {
 
-    
+
     game.stage.setBackgroundColor ("#F0B2F0");
 // set the background colour of the scene
     game.add.text(230,150, "Catapult",
